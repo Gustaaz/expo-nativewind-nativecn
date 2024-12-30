@@ -1,0 +1,7 @@
+export * from './animation-click'
+export * from './button-camera'
+export * from './close-camera'
+export * from './galery-image'
+export * from './image-screen'
+export * from './modal-dialog-add-photo'
+export * from './modal-discart-image'

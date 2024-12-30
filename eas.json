@@ -1,0 +1,27 @@
+{
+  "cli": {
+    "version": ">= 7.3.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_API_SURVEYOR_URL": "http://10.255.255.105:10020/api/vistoriador",
+        "EXPO_PUBLIC_API_SCHEDULE_URL": "http://10.255.255.105:10020/api/agendamentos",
+        "EXPO_PUBLIC_VERSION": "2.0.7"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

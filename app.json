@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "e-vista-mobile",
+    "slug": "e-vista-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/e-vista.png",
+    "userInterfaceStyle": "light",
+    "scheme": "e-vista-mobile",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "experiments": {
+      "tsconfigPaths": true,
+      "typedRoutes": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.disa.eVistaMobile"
+    },
+    "android": {
+      "icon": "./assets/e-vista.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/e-vista.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.disa.eVistaMobile",
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "@config-plugins/react-native-blob-util",
+      "@config-plugins/react-native-pdf",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0",
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "e-Vista-Mobile precisa acessar sua camera"
+        }
+      ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "45830799-70d8-46df-a64e-67df58b1933c"
+      }
+    }
+  }
+}
